@@ -1,0 +1,27 @@
+div.cartela {
+    border: 5px solid #000;
+    display: inline-grid;
+    grid-auto-flow: column;
+    grid-template-rows: 40px repeat(5, 5fr);
+    margin: 1em;
+}
+div.cartela div {
+    padding: 1em;
+    font-size: 2em;
+    text-align: center;
+    border: 1px solid #000;
+    min-width: 32px;
+}
+div.cartela div.estrela {
+    font-size: 4em;
+    padding: 0.125rem;
+    background-color: #888;
+    color: #FFF;
+}
+div.cartela div.letra {
+    padding: 0rem;
+    background-color: #888;
+    color: #FFF;
+    font-weight: bold;
+    border-color: #FFF;
+}
