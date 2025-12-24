@@ -25,3 +25,8 @@ div.cartela div.letra {
     font-weight: bold;
     border-color: #FFF;
 }
+@media print {
+	#botoes {
+		display: none;
+	}
+}

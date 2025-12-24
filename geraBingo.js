@@ -1,4 +1,7 @@
+const divInfo = document.getElementById("info");
+
 var qtdNumeros=90;
+var numCartelasGeradas = 0;
 function gerarCartela() {
     let divCartela=document.createElement("div");
     divCartela.classList.add("cartela");
@@ -57,6 +60,8 @@ function gerarCartela() {
     }
     document.body.appendChild(divCartela);
     console.log("Pronto!");
+	numCartelasGeradas++;
+	divInfo.innerHTML=numCartelasGeradas+" cartelas geradas nesta página.";
 }
 function gerarCartelas() {
     for (let i=0; i<100; i++) {
